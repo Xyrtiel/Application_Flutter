@@ -100,7 +100,7 @@ class EffectCard extends StatelessWidget {
                                       }
                                     },
                                     child: const Text(
-                                      "Buy",
+                                      "Acheter",
                                       style: TextStyle(
                                         fontSize: 16,
                                         fontWeight: FontWeight.bold,
@@ -129,7 +129,7 @@ class EffectCard extends StatelessWidget {
                       const SizedBox(height: 5),
                       isUnlocked
                           ? Text(
-                              "Unlocked",
+                              "Débloqué",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 color: kOrange,

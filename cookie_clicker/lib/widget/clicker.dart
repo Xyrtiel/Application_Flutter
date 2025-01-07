@@ -5,7 +5,11 @@ class Clicker extends StatelessWidget {
   final int cookiePerClick;
   final String skin;
   final Function onTap;
-  const Clicker({super.key, required this.cookiePerClick, required this.onTap, required this.skin});
+  const Clicker(
+      {super.key,
+      required this.cookiePerClick,
+      required this.onTap,
+      required this.skin});
 
   @override
   Widget build(BuildContext context) {
@@ -38,9 +42,9 @@ class Clicker extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        "Tap for Cookies",
+                        "Appuie pour avoir des Cookies",
                         style: TextStyle(
-                          fontSize: 18,
+                          fontSize: 16,
                           color: kOrange,
                           fontWeight: FontWeight.bold,
                         ),
@@ -51,7 +55,7 @@ class Clicker extends StatelessWidget {
                           style: TextStyle(color: kGrey, fontSize: 14),
                           children: [
                             const TextSpan(
-                              text: 'Get ',
+                              text: 'Obtiens ',
                             ),
                             TextSpan(
                                 text: '$cookiePerClick',
@@ -59,7 +63,8 @@ class Clicker extends StatelessWidget {
                                   fontWeight: FontWeight.bold,
                                 )),
                             const TextSpan(
-                              text: ' cookies per click and watch\nyour points soar !',
+                              text:
+                                  ' cookies par click pour obtenir\ndes points !',
                             ),
                           ],
                         ),

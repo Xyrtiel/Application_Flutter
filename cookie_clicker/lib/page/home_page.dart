@@ -86,8 +86,7 @@ class _HomePageState extends State<HomePage> {
                 const SizedBox(height: 20),
                 categoryDisplayed == Category.bonus
                     ? EffectCard(
-                        description:
-                            "Increase the number of cookies received by 3.",
+                        description: "Augmente le nombre de cookies par 3.",
                         name: "White Creamy",
                         isUnlocked: bonusOne,
                         onUnlocked: () {
@@ -98,21 +97,21 @@ class _HomePageState extends State<HomePage> {
                           });
                         },
                         price: 100,
-                        skin: "cookie_2.png",
+                        skin: "assets/cookie_2.png",
                         score: score,
                       )
                     : EffectCard(
-                        description: "You will get bloods on your hands.",
+                        description: "T'auras du sang sur les mains.",
                         name: "Red",
                         isUnlocked: skinOne,
                         onUnlocked: () {
                           setState(() {
                             skinOne = true;
-                            skin = "cookie_4.png";
+                            skin = "assets/cookie_4.png";
                           });
                         },
                         price: 100,
-                        skin: "cookie_4.png",
+                        skin: "assets/cookie_4.png",
                         score: score,
                       ),
               ],
